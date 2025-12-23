@@ -1,0 +1,111 @@
+=== بدء فحص الشبكة ===
+الوقت: 17 ديسمبر, 2025 CET 01:45:44 م
+الشبكة: 192.168.1.0/24
+
+=== الأجهزة المتصلة ===
+Interface: wlan0, type: EN10MB, MAC: 82:7a:50:77:74:33, IPv4: (none)
+
+=== تحليل الشبكة مع nmap ===
+Starting Nmap 7.95 ( https://nmap.org ) at 2025-12-17 13:45 CET
+Nmap scan report for 192.168.1.1 (192.168.1.1)
+Host is up (0.0029s latency).
+Not shown: 996 closed tcp ports (reset)
+PORT    STATE    SERVICE    VERSION
+23/tcp  filtered telnet
+53/tcp  open     domain     (generic dns response: SERVFAIL)
+80/tcp  open     http
+443/tcp open     tcpwrapped
+2 services unrecognized despite returning data. If you know the service/version, please submit the following fingerprints at https://nmap.org/cgi-bin/submit.cgi?new-service :
+==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
+SF-Port53-TCP:V=7.95%I=7%D=12/17%Time=6942A607%P=x86_64-pc-linux-gnu%r(DNS
+SF:VersionBindReqTCP,20,"\0\x1e\0\x06\x81\x82\0\x01\0\0\0\0\0\0\x07version
+SF:\x04bind\0\0\x10\0\x03");
+==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
+SF-Port80-TCP:V=7.95%I=7%D=12/17%Time=6942A602%P=x86_64-pc-linux-gnu%r(Get
+SF:Request,3A95,"HTTP/1\.0\x20200\x20OK\r\nConnection:\x20close\r\nCache-C
+SF:ontrol:\x20no-cache,no-store\r\nPragma:\x20no-cache\r\nContent-Length:\
+SF:x20155085\r\nSet-Cookie:\x20SID=0e65134dfc6cb2a2fb1b8e4c837c0da82e0d1be
+SF:cd9a842b8234dacdefabd6d51;\x20PATH=/;\x20HttpOnly;\x20SameSite=strict\r
+SF:\nSet-Cookie:\x20_TESTCOOKIESUPPORT=1;\x20PATH=/;\x20HttpOnly;\x20SameS
+SF:ite=strict\r\nServer:\x20\r\nAccept-Ranges:\x20bytes\r\nX-Content-Type-
+SF:Options:\x20nosniff\r\nX-XSS-Protection:\x201;\x20mode=block\r\nContent
+SF:-Security-Policy:\x20frame-ancestors\x20'self'\x20\r\nX-Frame-Options:\
+SF:x20SAMEORIGIN\r\nContent-Type:\x20text/html;\x20charset=utf-8\r\n\r\n<!
+SF:DOCTYPE\x20HTML\x20PUBLIC\x20\"-//W3C//DTD\x20HTML\x204\.01\x20Transiti
+SF:onal//EN\"\x20\"http://www\.w3\.org/TR/html4/transitional\.dtd\">\n<htm
+SF:l\x20xmlns=\"http://www\.w3\.org/1999/xhtml\">\n<head>\n<meta\x20http-e
+SF:quiv=\"Content-Type\"\x20content=\"text/html;\x20charset=utf-8\"\x20/>\
+SF:n<meta\x20http-equiv=\"X-UA-Compatible\"\x20content=\"IE=edge\">\n\n<li
+SF:nk\x20rel=\"shortcut\x20icon\"\x20href=\"/img/favicon\.ico\"\x20/>\n\n<
+SF:title>&#70;&#54;&#54;&#48;</title>\n<style\x20")%r(HTTPOptions,5C7,"HTT
+SF:P/1\.1\x20400\x20Bad\x20Request\r\nConnection:\x20close\r\nContent-Type
+SF::\x20text/html;\x20charset=iso-8859-1\r\nX-Content-Type-Options:\x20nos
+SF:niff\r\nX-XSS-Protection:\x201;\x20mode=block\r\nX-Frame-Options:\x20SA
+SF:MEORIGIN\r\nContent-Security-Policy:\x20frame-ancestors\x20'self';\x20\
+SF:r\nCache-Control:\x20no-cache,no-store\r\nPragma:\x20no-cache\r\n\r\n\x
+SF:20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\
+SF:x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20
+SF:\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<html>\
+SF:n\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x
+SF:20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\
+SF:x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<hea
+SF:d><title>400\x20Bad\x20Request</title></head>\n\x20\x20\x20\x20\x20\x20
+SF:\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x2
+SF:0\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x
+SF:20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<body\x20bgcolor=\"#FFFFFF\"\
+SF:x20text=\"#000000\"\x20link=\"#2020ff\"\x20vlink=\"#4040cc\">\n\x20\x20
+SF:\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x2
+SF:0\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x
+SF:20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<h2>400\x20Ba
+SF:d\x20Request</h2>\nYour\x20request\x20has\x20bad\x20syntax\x20or\x20is\
+SF:x20inherently\x20impossible\x20to\x20satisfy\.\n<div\x20style=\"display
+SF::none\">\n<ajax_response_xml_root>\n<IF_ERRORSTR>SessionTimeout</IF_ERR
+SF:ORSTR>\n<IF_ERRORPARAM>SUCC</IF_ERRORPARAM>\n<IF_ERRORTYPE>SUCC</IF_ERR
+SF:ORTYPE>\n</ajax_response_xml_roo");
+MAC Address: 94:28:6F:E3:35:A6 (zte)
+Device type: general purpose
+Running: Linux 3.X|4.X
+OS CPE: cpe:/o:linux:linux_kernel:3 cpe:/o:linux:linux_kernel:4
+OS details: Linux 3.2 - 4.14
+Network Distance: 1 hop
+
+Nmap scan report for 192.168.1.18 (192.168.1.18)
+Host is up (0.0070s latency).
+All 1000 scanned ports on 192.168.1.18 (192.168.1.18) are in ignored states.
+Not shown: 1000 closed tcp ports (reset)
+MAC Address: A2:A0:BC:CB:C6:C7 (Unknown)
+Too many fingerprints match this host to give specific OS details
+Network Distance: 1 hop
+
+Nmap scan report for 192.168.1.105 (192.168.1.105)
+Host is up (0.000039s latency).
+Not shown: 986 closed tcp ports (reset)
+PORT     STATE    SERVICE      VERSION
+21/tcp   filtered ftp
+22/tcp   filtered ssh
+23/tcp   filtered telnet
+25/tcp   filtered smtp
+80/tcp   filtered http
+110/tcp  filtered pop3
+139/tcp  filtered netbios-ssn
+443/tcp  filtered https
+445/tcp  filtered microsoft-ds
+3306/tcp filtered mysql
+5432/tcp filtered postgresql
+5900/tcp filtered vnc
+8080/tcp filtered http-proxy
+8180/tcp filtered unknown
+Too many fingerprints match this host to give specific OS details
+Network Distance: 0 hops
+
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 256 IP addresses (3 hosts up) scanned in 25.25 seconds
+
+=== فحص الثغرات الأساسية ===
+Starting Nmap 7.95 ( https://nmap.org ) at 2025-12-17 13:46 CET
+Pre-scan script results:
+| broadcast-avahi-dos: 
+|   Discovered hosts:
+|     224.0.0.251
+|   After NULL UDP avahi packet DoS (CVE-2011-1002).
+|_  Hosts are all up (not vulnerable).
